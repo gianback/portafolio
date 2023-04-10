@@ -14,6 +14,7 @@ module.exports = {
         barlow: ["var(--font-barlow)"],
       },
       screens: {
+        tablet: "768px",
         tabletxl: "1024px",
         laptop: "1200px",
       },
