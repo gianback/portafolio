@@ -4,7 +4,7 @@ import { Socials } from '../molecules'
 import styles from '@/styles/HomeAbout.module.css'
 export const HomeAbout = () => {
    return (
-      <section className={`${styles.HomeAbout}`}>
+      <section className={`${styles.HomeAbout}`} data-section="/">
          <div className="">
             <div>
                <h1 className="text-2xl tablet:text-5xl desktop:text-6xl uppercase text-white font-bold mt-6">

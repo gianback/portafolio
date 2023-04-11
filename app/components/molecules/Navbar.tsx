@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import navbar from '@/styles/Navbar.module.css'
 
 const menuList = [
    {
@@ -15,13 +16,17 @@ const menuList = [
    },
 ]
 
-export const Navbar = () => {
+interface NavbarProps {
+   isMenuActive: boolean
+}
+
+export const Navbar = ({ isMenuActive }: NavbarProps) => {
    return (
-      <nav className="flex items-center gap-6">
+      <nav className={`${navbar.Navbar} ${isMenuActive && navbar.Navbar_active}`}>
          {menuList.map(({ label, url }) => (
-            <Link key={label} href={url} className="font-medium text-lg">
+            <li key={label} className="font-medium text-lg">
                {label}
-            </Link>
+            </li>
          ))}
       </nav>
    )
