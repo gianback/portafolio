@@ -1,0 +1,8 @@
+.HomeAbout {
+   @apply flex flex-col-reverse gap-3 py-5;
+   min-height: 40vmax;
+   @media screen(laptop) {
+      @apply grid items-center gap-6 min-h-[80vh];
+      grid-template-columns: 55% auto;
+   }
+}

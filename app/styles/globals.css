@@ -3,7 +3,12 @@
 @tailwind utilities;
 
 svg {
-  max-width: 100%;
-  height: auto;
-  fill: currentColor;
+   max-width: 100%;
+   height: auto;
+   fill: currentColor;
+}
+body {
+   &.no-scroll {
+      @apply overflow-hidden;
+   }
 }

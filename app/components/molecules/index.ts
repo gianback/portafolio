@@ -1,1 +1,2 @@
-export * from "./Socials";
+export * from './Socials'
+export * from './Navbar'

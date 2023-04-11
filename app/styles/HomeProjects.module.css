@@ -1,15 +1,15 @@
 .HomeProject_list {
-  @apply flex flex-col gap-8 laptop:gap-32 mt-8 laptop:mt-14;
-  article {
-    &:nth-child(even) {
-      picture {
-        grid-column: 2/3;
-        grid-row: 1/2;
+   @apply flex flex-col gap-12 laptop:gap-12 desktop:gap-32 mt-8 desktop:mt-14;
+   article {
+      &:nth-child(even) {
+         picture {
+            grid-column: 2/3;
+            grid-row: 1/2;
+         }
+         div {
+            grid-column: 1/2;
+            grid-row: 1/2;
+         }
       }
-      div {
-        grid-column: 1/2;
-        grid-row: 1/2;
-      }
-    }
-  }
+   }
 }
