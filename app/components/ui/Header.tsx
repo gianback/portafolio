@@ -1,30 +1,53 @@
-import { useState } from 'react'
-import { MenuIcon } from '../atoms'
-import { Navbar } from '../molecules'
+import Image from "next/image";
+import { useState } from "react";
 
-import header from '@/styles/Header.module.css'
-import logo from '@/public/logo.svg'
-import Image from 'next/image'
+import { MenuIcon } from "../atoms";
+import { Navbar } from "../molecules";
+
+import header from "@/styles/Header.module.css";
+import logo from "@/public/logo.webp";
 
 export const Header = () => {
-   const [isMenuActive, setIsMenuActive] = useState(false)
+  const [isMenuActive, setIsMenuActive] = useState(false);
 
-   const handleActiveMenu = () => {
-      setIsMenuActive(!isMenuActive)
-      document.querySelector('body')?.classList.toggle('no-scroll')
-   }
+  const handleActiveMenu = () => {
+    setIsMenuActive(!isMenuActive);
+    document.querySelector("body")?.classList.toggle("no-scroll");
+  };
 
-   return (
-      <header className={`${header.Header}`}>
-         <div className={`${header.Container}`}>
-            <picture className={`${header.Logo}`}>
-               <Image src={logo.src} width={150} height={10} alt="Gian Franco Peralta" />
-            </picture>
+  const handleActiveMenuFromNabvar = () => {
+    setIsMenuActive(false);
+    document.querySelector("body")?.classList.remove("no-scroll");
+  };
 
-            <MenuIcon setIsActive={handleActiveMenu} isActive={isMenuActive} type="hamburguer" />
-            <Navbar isMenuActive={isMenuActive} />
-            <div className={`${header.Overlay} ${isMenuActive && header.Overlay_active}`} onClick={handleActiveMenu} />
-         </div>
-      </header>
-   )
-}
+  return (
+    <header className={`${header.Header}`}>
+      <div className={`${header.Container}`}>
+        <picture className={`${header.Logo}`}>
+          <Image
+            src={logo.src}
+            width={100}
+            height={50}
+            alt="Gian Franco Peralta"
+          />
+        </picture>
+
+        <MenuIcon
+          setIsActive={handleActiveMenu}
+          isActive={isMenuActive}
+          type="hamburguer"
+        />
+        <Navbar
+          isMenuActive={isMenuActive}
+          setActiveMenu={handleActiveMenuFromNabvar}
+        />
+        <div
+          className={`${header.Overlay} ${
+            isMenuActive && header.Overlay_active
+          }`}
+          onClick={handleActiveMenu}
+        />
+      </div>
+    </header>
+  );
+};

@@ -1,3 +1,4 @@
+import { Favicon } from "@/components/atoms";
 import { Layout } from "@/components/layout";
 import "@/styles/globals.css";
 import type { AppProps } from "next/app";
@@ -13,7 +14,8 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Hola! Soy Gian Franco, amante de la tecnología"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="../public/vercel.svg" />
+        <Favicon />
       </Head>
       <Layout>
         <Component {...pageProps} />
