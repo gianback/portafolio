@@ -47,7 +47,7 @@ export const HomeContact = () => {
                <button
                   type="submit"
                   disabled={isLoading}
-                  className="inline-block bg-primary text-black font-medium py-2 laptop:py-4 px-4 laptop:px-8 laptop:text-lg rounded-lg hover:bg-white transition-all duration-75 ease-linear "
+                  className="inline-block bg-primary text-black font-medium py-2 desktop:py-3  px-4 desktop:px-6  desktop:text-lg  rounded-lg hover:bg-white transition-all duration-75 ease-linear "
                >
                   Enviar
                </button>

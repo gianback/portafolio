@@ -8,7 +8,10 @@ export default function App({ Component, pageProps }: AppProps) {
       <>
          <Head>
             <title>Gian Franco Peralta Bravo</title>
-            <meta name="description" content="Hola! Soy Gian Franco, amante de la tecnología" />
+            <meta
+               name="description"
+               content="Hola! Soy Gian Franco soy desarrollador web como +1 año de experiencia, he realizado proyectos con Nextjs,Typescript,Vuejs,Reactjs,etc."
+            />
             <meta name="viewport" content="width=device-width, initial-scale=1" />
 
             <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
