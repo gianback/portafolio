@@ -1,33 +1,33 @@
 .Header {
-   @apply flex sticky top-0 bg-transparent justify-end;
-   backdrop-filter: blur(10px);
-   background-color: rgba(255 255 255, 1);
-   -webkit-backdrop-filter: blur(10px);
+  @apply flex sticky top-0 bg-transparent justify-end;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255 255 255, 1);
+  -webkit-backdrop-filter: blur(10px);
 }
 .Container {
-   @media screen(tabletxl) {
-      @apply relative pl-8 p-0 w-[92.2%] mx-auto;
-      max-width: 147.6rem;
-   }
-   @media screen(laptop) {
-      @apply w-[78.2%] pl-0 flex items-center justify-between py-2;
-   }
+  @media screen(tabletxl) {
+    @apply pl-8 p-0 w-[92.2%] flex justify-end;
+    max-width: 147.6rem;
+  }
+  @media screen(laptop) {
+    @apply relative w-[78.2%] mx-auto pl-0 items-center justify-between py-2;
+  }
 }
 .Logo {
-   @apply absolute top-2 w-14 left-8 z-10;
-   @media screen(laptop) {
-      @apply static w-auto  left-0;
-   }
+  @apply absolute top-2 w-14 left-8 z-10;
+  @media screen(laptop) {
+    @apply static w-auto  left-0;
+  }
 }
 .Overlay {
-   @apply bg-black/60 fixed inset-0 h-screen;
-   transition: all 0.5s ease;
-   opacity: 0;
-   z-index: 1;
-   visibility: hidden;
+  @apply bg-black/60 fixed inset-0 h-screen;
+  transition: all 0.5s ease;
+  opacity: 0;
+  z-index: 1;
+  visibility: hidden;
 }
 
 .Overlay_active {
-   opacity: 1;
-   visibility: visible;
+  opacity: 1;
+  visibility: visible;
 }
