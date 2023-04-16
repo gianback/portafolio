@@ -5,5 +5,4 @@ export * from "./Loader";
 export * from "./MenuIcon";
 export * from "./SendIcon";
 export * from "./WspIcon";
-export * from "./Favicon";
 export * from "./Button";
