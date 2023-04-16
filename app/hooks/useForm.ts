@@ -10,7 +10,7 @@ export const useForm = () => {
     const formData = new FormData(e.currentTarget);
 
     if (!formData.get("email")) {
-      setEmailError("Email es requerido");
+      setEmailError("Email es obligatorio");
 
       setTimeout(() => {
         setEmailError("");

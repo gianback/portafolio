@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { CodeIcon, SendIcon } from "../atoms";
+import { Button, CodeIcon, SendIcon } from "../atoms";
 
 interface ProjectCardProps {
   image: string;
@@ -49,27 +49,20 @@ export const ProjectCard = ({
           ))}
         </div>
         <div className="flex gap-4 laptop:gap-6 mt-4 laptop:mt-6">
-          <a
-            href={url}
-            target="_blank"
-            className="flex gap-3 items-center bg-primary text-black font-medium py-2 laptop:py-3 px-4 laptop:px-6 laptop:text-lg rounded-lg hover:bg-white transition-all duration-75 ease-linear"
-          >
-            Ver sitio
-            <span className="w-full flex-1">
+          <Button url={url}>
+            Sitio
+            <span className="w-3 flex-1">
               <SendIcon />
             </span>
-          </a>
+          </Button>
+
           {code && (
-            <a
-              href={code}
-              target="_blank"
-              className="flex gap-3 items-center bg-primary text-black font-medium py-2 laptop:py-3 px-4 laptop:px-6 laptop:text-lg rounded-lg hover:bg-white transition-all duration-75 ease-linear"
-            >
-              Ver código
+            <Button url={code}>
+              Código
               <span className="w-full flex-1">
                 <CodeIcon />
               </span>
-            </a>
+            </Button>
           )}
         </div>
       </div>

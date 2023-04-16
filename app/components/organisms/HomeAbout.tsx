@@ -11,12 +11,12 @@ export const HomeAbout = () => {
             Gian Franco Peralta Bravo
           </h1>
           <p className="text-primary font-medium text-xl tabletxl:text-2xl desktop:text-4xl mt-4 max-w-[45ch]">
-            Poseo{" "}
+            Cuento con{" "}
             <span className="font-bold text-white">
               {" "}
               más de un año de experiencia
             </span>{" "}
-            como desarrollador web, trabajé con ReactJs, NextJS, Typescript,
+            como desarrollador web, trabajo con ReactJs, NextJS, Typescript,
             TailwindCss, Vuejs, etc. Me apasiona la tecnología y estoy en busca
             de nuevos retos que me permitan crecer como profesional y aprender
             nuevas habilidades.
