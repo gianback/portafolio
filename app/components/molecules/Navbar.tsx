@@ -31,7 +31,7 @@ export const Navbar = ({ isMenuActive, setActiveMenu }: NavbarProps) => {
       {menuList.map(({ label, url }) => (
         <li
           key={label}
-          className="font-medium text-lg cursor-pointer"
+          className="font-medium text-lg laptop:text-xl cursor-pointer"
           onClick={() => handleGoToSection(url)}
         >
           {label}

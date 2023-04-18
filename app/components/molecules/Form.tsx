@@ -6,7 +6,7 @@ export const Form = () => {
 
   return (
     <form
-      className="flex flex-col gap-5 mt-4 laptop:gap-8"
+      className="flex flex-col gap-5 mt-4 laptop:mt-8 laptop:gap-8"
       onSubmit={handleSubmit}
     >
       <div className="flex flex-col gap-5 laptop:grid grid-cols-2 laptop:gap-12">
@@ -17,7 +17,7 @@ export const Form = () => {
             placeholder="Cristiano Ronaldo"
             id="name"
             name="name"
-            className="text-gray-800 font-medium px-4 py-2 rounded-lg outline-none"
+            className="bg-black/50 border border-white text-white font-medium px-4 py-2 rounded-lg outline-none"
           />
         </div>
         <div className="flex flex-col gap-2 ">
@@ -27,7 +27,7 @@ export const Form = () => {
             id="email"
             placeholder="cristianocr7@gmail.com"
             name="email"
-            className="text-gray-800 font-medium  px-4 py-2 rounded-lg outline-none"
+            className="bg-black/50 border border-white text-white font-medium  px-4 py-2 rounded-lg outline-none"
           />
           {emailError && <p className="text-red-400">{emailError}</p>}
         </div>
@@ -38,7 +38,7 @@ export const Form = () => {
           name="message"
           id="message"
           placeholder="Me gustaría contactarte..."
-          className="text-gray-800 font-medium px-4 py-2 rounded-lg outline-none h-36"
+          className="bg-black/50 border border-white text-white font-medium px-4 py-2 rounded-lg outline-none h-36"
         ></textarea>
       </div>
       <div className="relative">
