@@ -14,10 +14,10 @@ export const Form = () => {
           <label className="text-xl">Nombres:</label>
           <input
             type="text"
-            placeholder="Cristiano Ronaldo"
+            placeholder="Gian Franco Peralta Bravo"
             id="name"
             name="name"
-            className="bg-black/50 border border-white text-white font-medium px-4 py-2 rounded-lg outline-none"
+            className="bg-[#1b1a22] border border-white text-white font-medium px-4 py-2 rounded-lg outline-none"
           />
         </div>
         <div className="flex flex-col gap-2 ">
@@ -25,9 +25,9 @@ export const Form = () => {
           <input
             type="email"
             id="email"
-            placeholder="cristianocr7@gmail.com"
+            placeholder="gianfraback@gmail.com"
             name="email"
-            className="bg-black/50 border border-white text-white font-medium  px-4 py-2 rounded-lg outline-none"
+            className="bg-[#1b1a22] border border-white text-white font-medium  px-4 py-2 rounded-lg outline-none"
           />
           {emailError && <p className="text-red-400">{emailError}</p>}
         </div>
@@ -38,7 +38,7 @@ export const Form = () => {
           name="message"
           id="message"
           placeholder="Me gustaría contactarte..."
-          className="bg-black/50 border border-white text-white font-medium px-4 py-2 rounded-lg outline-none h-36"
+          className="bg-[#1b1a22] border border-white text-white font-medium px-4 py-2 rounded-lg outline-none h-36"
         ></textarea>
       </div>
       <div className="relative">

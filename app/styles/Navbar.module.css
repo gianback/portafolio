@@ -1,16 +1,32 @@
 .Navbar {
-  @apply flex flex-col items-center justify-center gap-4 px-8 fixed w-full bg-primary text-black h-80;
+  @apply fixed flex items-center justify-center w-full bg-primary text-black h-80;
   top: 0;
   left: 0;
   transform: translateY(-100%);
   transition: transform 0.4s ease;
   z-index: 5;
   @media screen(laptop) {
-    @apply relative bg-transparent flex flex-row justify-end items-center gap-10 h-full p-0 text-primary;
+    @apply relative bg-transparent h-full p-0 text-primary;
     transform: translateY(0);
   }
 }
-
+.Navbar_list {
+  @apply flex flex-col items-center justify-center gap-4 w-full mt-10;
+  border-top: 1px solid #404040;
+  @media screen(laptop) {
+    border-top: none;
+    @apply flex flex-row justify-end gap-10 m-0;
+  }
+}
 .Navbar_active {
   transform: translateY(0);
+}
+
+.Navbar_item {
+  @apply font-semibold w-full text-center text-lg cursor-pointer py-2;
+  border-bottom: 1px solid #404040;
+  @media screen(laptop) {
+    @apply text-xl w-auto p-0;
+    border-bottom: none;
+  }
 }

@@ -28,15 +28,17 @@ export const Navbar = ({ isMenuActive, setActiveMenu }: NavbarProps) => {
   };
   return (
     <nav className={`${navbar.Navbar} ${isMenuActive && navbar.Navbar_active}`}>
-      {menuList.map(({ label, url }) => (
-        <li
-          key={label}
-          className="font-medium text-lg laptop:text-xl cursor-pointer"
-          onClick={() => handleGoToSection(url)}
-        >
-          {label}
-        </li>
-      ))}
+      <ul className={navbar.Navbar_list}>
+        {menuList.map(({ label, url }) => (
+          <li
+            key={label}
+            className={navbar.Navbar_item}
+            onClick={() => handleGoToSection(url)}
+          >
+            {label}
+          </li>
+        ))}
+      </ul>
     </nav>
   );
 };

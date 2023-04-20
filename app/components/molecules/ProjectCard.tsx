@@ -36,17 +36,24 @@ export const ProjectCard = ({
         <p className="text-white text-lg desktop:text-2xl laptop:mt-4">
           {description}
         </p>
-        <p className="font-medium mt-4 text-xl">Tecnologías usadas:</p>
-        <div className="flex gap-4 mt-4 ">
-          {technologies.map((tech) => (
-            <picture
-              key={tech}
-              className="flex items-center justify-center w-7"
-              title={tech.toUpperCase()}
-            >
-              <Image src={`/${tech}.svg`} width={150} height={150} alt={tech} />
-            </picture>
-          ))}
+        <div className="laptop:flex gap-4">
+          <p className="font-medium mt-4 text-xl">Tecnologías usadas:</p>
+          <div className="flex gap-4 mt-4 ">
+            {technologies.map((tech) => (
+              <picture
+                key={tech}
+                className="flex items-center justify-center w-7"
+                title={tech.toUpperCase()}
+              >
+                <Image
+                  src={`/${tech}.svg`}
+                  width={150}
+                  height={150}
+                  alt={tech}
+                />
+              </picture>
+            ))}
+          </div>
         </div>
         <div className="flex gap-4 laptop:gap-6 mt-4 laptop:mt-6">
           <Button url={url}>

@@ -25,6 +25,9 @@
   opacity: 0;
   z-index: 1;
   visibility: hidden;
+  @media screen(laptop) {
+    @apply hidden;
+  }
 }
 
 .Overlay_active {

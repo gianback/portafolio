@@ -10,7 +10,7 @@ export const HomeContact = () => {
         Contacto
       </h2>
       <p className="text-xl laptop:text-2xl mt-2 laptop:mt-4 laptop:text-center">
-        Si estás interesado en contactarme no dudes en hacerlo!
+        Si estás interesado en contactarme, ¡no dudes en hacerlo!
       </p>
       <Form />
     </section>
