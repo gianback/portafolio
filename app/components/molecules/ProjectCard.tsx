@@ -42,7 +42,7 @@ export const ProjectCard = ({
             {technologies.map((tech) => (
               <picture
                 key={tech}
-                className="flex items-center justify-center w-7"
+                className="flex items-center justify-center w-8"
                 title={tech.toUpperCase()}
               >
                 <Image
