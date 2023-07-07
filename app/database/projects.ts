@@ -51,7 +51,7 @@ export const projects = [
     description:
       "Encuentra la mejor instalación de adoquines de concreto en California. Ofrece un servicio integral, desde la instalación de adoquines hasta la aplicación de sellador. Utilizan adoquines de concreto entrelazados de alta calidad.",
     image: "/justpavers.webp",
-    url: "https://justpavers.amgbusiness.us/",
+    url: "https://justpaversdesign.com/",
     technologies: ["nuxtjs", "vue", "tailwindcss", "wordpress"],
   },
 ];
