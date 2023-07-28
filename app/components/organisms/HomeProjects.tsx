@@ -1,7 +1,5 @@
 import { projects } from "@/database/projects";
-import Image from "next/image";
 import styles from "@/styles/HomeProjects.module.css";
-import { CodeIcon, SendIcon } from "../atoms";
 import { ProjectCard } from "../molecules";
 
 export const HomeProjects = () => {
@@ -12,9 +10,9 @@ export const HomeProjects = () => {
       </h2>
       <div className={`${styles.HomeProject_list}`}>
         {projects.map(
-          ({ description, id, image, name, technologies, url, code }) => (
+          ({ description, image, name, technologies, url, code }) => (
             <ProjectCard
-              key={id}
+              key={name}
               description={description}
               image={image}
               name={name}
