@@ -10,7 +10,7 @@
     max-width: 147.6rem;
   }
   @media screen(laptop) {
-    @apply relative w-[78.2%] mx-auto pl-0 items-center justify-between py-2;
+    @apply relative w-[70.5%] mx-auto pl-0 items-center justify-between py-2;
   }
 }
 .Logo {
