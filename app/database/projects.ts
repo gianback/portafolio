@@ -1,5 +1,14 @@
 export const projects = [
   {
+    name: "Ideal Language Programming",
+    description:
+      "Una app divertida para descubrir que lenguaje de programación es el ideal para ti segun la inteligencia artifical de OpenAi.",
+    image: "/ideal-lang.webp",
+    url: "https://ideal-programming-language.vercel.app/",
+    code: "https://github.com/gianback/ideal-programming-language/tree/master",
+    technologies: ["nextjs", "typescript", "tailwindcss", "express", "openai"],
+  },
+  {
     name: "Movie App",
     description:
       "Movie App es una innovadora plataforma que permite a los usuarios leer reseñas y opiniones de películas y series sin spoilers. Proporciona recomendaciones detalladas y confiables.",
