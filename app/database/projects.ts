@@ -1,12 +1,19 @@
 export const projects = [
   {
-    name: "Ideal Language Programming",
+    name: "Clon ChatGPT",
     description:
-      "Una app divertida para descubrir que lenguaje de programación es el ideal para ti segun la inteligencia artifical de OpenAi.",
-    image: "/ideal-lang.webp",
-    url: "https://ideal-programming-language.vercel.app/",
-    code: "https://github.com/gianback/ideal-programming-language/tree/master",
-    technologies: ["nextjs", "typescript", "tailwindcss", "express", "openai"],
+      "Explore el futuro de las experiencias conversacionales impulsadas por IA con nuestro clon ChatGPT.",
+    image: "/clon-chatgpt.webp",
+    url: "https://clon-chatgpt.vercel.app/home",
+    code: "https://github.com/gianback/clon-chatgpt",
+    technologies: [
+      "nextjs",
+      "typescript",
+      "tailwindcss",
+      "express",
+      "postgresql",
+      "prisma",
+    ],
   },
   {
     name: "Movie App",
@@ -32,6 +39,15 @@ export const projects = [
     image: "/el-chile.webp",
     url: "https://chiletacosnbeer.com/",
     technologies: ["nextjs", "typescript", "tailwindcss", "strapi"],
+  },
+  {
+    name: "Ideal Language Programming",
+    description:
+      "Una app divertida para descubrir que lenguaje de programación es el ideal para ti segun la inteligencia artifical de OpenAi.",
+    image: "/ideal-lang.webp",
+    url: "https://ideal-programming-language.vercel.app/",
+    code: "https://github.com/gianback/ideal-programming-language/tree/master",
+    technologies: ["nextjs", "typescript", "tailwindcss", "express", "openai"],
   },
   {
     name: "Jimenez Painting",
