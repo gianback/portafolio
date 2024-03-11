@@ -23,16 +23,6 @@ export const Socials = () => {
           <LinkedinIcon />
         </a>
       </li>
-      <li>
-        <a
-          href="https://wa.link/u1ioxy"
-          target="_blank"
-          className="w-7 laptop:w-9 block"
-          title="whatsapp"
-        >
-          <WspIcon />
-        </a>
-      </li>
     </ul>
   );
 };
