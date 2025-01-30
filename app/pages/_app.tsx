@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <title>Gian Franco Peralta Bravo</title>
         <meta
           name="description"
-          content="Hola! Soy Gian Franco soy desarrollador web como +1 año de experiencia, he realizado proyectos con Nextjs,Typescript,Vuejs,Reactjs,etc."
+          content="Hola! Soy Gian Franco soy desarrollador web como +2 año de experiencia, he realizado proyectos con Nextjs,Typescript,Vuejs,Reactjs,etc."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 

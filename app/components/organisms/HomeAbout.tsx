@@ -14,7 +14,7 @@ export const HomeAbout = () => {
             <p className="text-primary font-medium text-xl tabletxl:text-2xl desktop:text-4xl mt-4 max-w-[45ch] tablet:text-center laptop:text-left">
               {" "}
               <span className="font-bold text-white">
-                Desarrollador Frontend con +1 año{" "}
+                Desarrollador Frontend con +2 año{" "}
               </span>{" "}
               de experiencia, me gusta escribir con código limpio y eficiente
               para abordar problemas y satisfacer las necesidades de los
